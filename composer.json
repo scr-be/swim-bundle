@@ -1,0 +1,72 @@
+{
+    "name"        : "scribe/swim-bundle",
+    "license"     : "MIT",
+    "type"        : "project",
+    "homepage"    : "https://cache-bundle.oss.scr.be/home",
+    "description" : "Simple and extensible parser library for markdown, Swim, and more...",
+    "support" : {
+        "email"  : "rmf@scr.be",
+        "issues" : "https://cache-bundle.oss.scr.be/issues",
+        "source" : "https://cache-bundle.oss.scr.be/git",
+        "irc"    : "irc://irc.efnet.org/scribe"
+    },
+    "keywords"    : [
+        "swim-bundle", "scribe-swim-bundle", "swim", "markdown", "symfony", "scribe", "scribenet"
+    ],
+    "authors"     : [
+        {
+            "name"    : "Rob Frawley 2nd",
+            "email"   : "rmf@scr.be",
+            "homepage": "https://scr.be/rmf",
+            "role"    : "Project Lead"
+        },
+        {
+            "name"    : "Dan Corrigan",
+            "email"   : "dfc@scr.be",
+            "homepage": "https://scr.be/dfc",
+            "role"    : "Developer (Rogue Rubyist)"
+        }
+    ],
+    "require" : {
+        "php"                          : ">=5.6.4,~5.6|~7.0",
+        "scr-be/wonka-bundle"          : "~0.2",
+        "scr-be/cache-bundle"          : "~2.2",
+        "symfony/dependency-injection" : "~2.8|~3.0",
+        "erusev/parsedown"             : "~1.5",
+        "erusev/parsedown-extra"       : "~0.7"
+    },
+    "require-dev" : {
+        "symfony/symfony"             : "~2.8|~3.0",
+        "symfony/framework-bundle"    : "~2.8|~3.0",
+        "symfony/monolog-bundle"      : "~2.8|~3.0",
+        "symfony/stopwatch"           : "~2.8|~3.0",
+        "symfony/var-dumper"          : "~2.8|~3.0",
+        "symfony/debug-bundle"        : "~2.8|~3.0",
+        "symfony/phpunit-bridge"      : "~2.8|~3.0",
+        "phpunit/phpunit"             : "~5.0",
+        "codacy/coverage"             : "~1.0",
+        "satooshi/php-coveralls"      : "~0.7",
+        "chriskite/phactory"          : "~0.4",
+        "fzaninotto/faker"            : "~1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scribe\\SwimBundle\\": "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Scribe\\SwimBundle\\Tests\\" : "tests/"
+        }
+    },
+    "minimum-stability" : "dev",
+    "prefer-stable"     : true,
+    "config": {
+        "bin-dir" : "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master" : "2.2-dev"
+        }
+    }
+}
