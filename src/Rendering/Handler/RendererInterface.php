@@ -17,7 +17,7 @@ use Scribe\WonkaBundle\Component\DependencyInjection\Compiler\Attendant\Compiler
 /**
  * Class SwimRendererHandlerInterface.
  */
-interface SwimRenderingHandlerInterface extends CompilerAttendantInterface
+interface RendererInterface extends CompilerAttendantInterface
 {
     /**
      * @var string
@@ -75,6 +75,14 @@ interface SwimRenderingHandlerInterface extends CompilerAttendantInterface
      * @return $this
      */
     public function chainRendering(SwimRenderingManagerInterface $manager);
+
+    /**
+     * @param null|string $string
+     * @param array       $args
+     *
+     * @return string
+     */
+    public function render($string, array $args = []);
 
     /**
      * @return array

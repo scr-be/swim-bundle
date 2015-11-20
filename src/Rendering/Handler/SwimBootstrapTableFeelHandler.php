@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimBootstrapTableFeelHandler.
  */
-class SwimBootstrapTableFeelHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapTableFeelHandler extends AbstractRenderer
 {
     /**
      * @return string

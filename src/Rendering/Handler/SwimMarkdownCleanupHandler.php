@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimMarkdownCleanupHandler.
  */
-class SwimMarkdownCleanupHandler extends AbstractSwimRenderingHandler
+class SwimMarkdownCleanupHandler extends AbstractRenderer
 {
     /**
      * @return string

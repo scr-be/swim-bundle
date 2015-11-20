@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimBootstrapTableLookStep.
  */
-class SwimBootstrapTableLookHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapTableLookHandler extends AbstractRenderer
 {
     /**
      * @return string

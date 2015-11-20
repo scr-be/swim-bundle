@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimLinkExternalHandler.
  */
-class SwimLinkExternalHandler extends AbstractSwimRenderingHandler
+class SwimLinkExternalHandler extends AbstractRenderer
 {
     /**
      * @return string

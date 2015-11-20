@@ -39,12 +39,12 @@ class SwimRenderingManager implements SwimRenderingManagerInterface
     private $attributes = [];
 
     /**
-     * @var SwimRenderingRegistrar
+     * @var RendererCompilerRegistrar
      */
     protected $registrar;
 
     /**
-     * @param SwimRenderingRegistrarInterface $registrar
+     * @param RendererCompilerRegistrar $registrar
      */
     public function __construct(RendererCompilerRegistrar $registrar)
     {

@@ -29,7 +29,7 @@ class RendererCompilerRegistrar extends AbstractCompilerRegistrar
     public function __construct(...$parameters)
     {
         parent::__construct(
-            ['interfaceCollection' => ['Scribe\SwimBundle\Rendering\Handler\SwimRenderingHandlerInterface']]
+            ['interfaceCollection' => ['Scribe\SwimBundle\Rendering\Handler\RendererInterface']]
         );
     }
 

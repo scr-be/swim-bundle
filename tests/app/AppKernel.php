@@ -29,8 +29,8 @@ class AppKernel extends Kernel
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
-            new \Scribe\CacheBundle\ScribeCacheBundle(),
             new \Scribe\WonkaBundle\ScribeWonkaBundle(),
+            new \Scribe\CacheBundle\ScribeCacheBundle(),
             new \Scribe\SwimBundle\ScribeSwimBundle(),
         ];
 

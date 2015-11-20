@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimParserQueries.
  */
-class SwimBootstrapCallOutHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapCallOutHandler extends AbstractRenderer
 {
     /**
      * @var \ParsedownExtra

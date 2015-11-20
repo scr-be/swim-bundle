@@ -16,7 +16,7 @@ use Scribe\Wonka\Utility\Filter\StringFilter;
 /**
  * Class SwimBootstrapCollapseHandler.
  */
-class SwimBootstrapCollapseHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapCollapseHandler extends AbstractRenderer
 {
     /**
      * @return string

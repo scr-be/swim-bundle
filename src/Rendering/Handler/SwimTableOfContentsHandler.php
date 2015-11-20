@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Class SwimTableOfContentsHandler.
  */
-class SwimTableOfContentsHandler extends AbstractSwimRenderingHandler
+class SwimTableOfContentsHandler extends AbstractRenderer
 {
     /**
      * @var ContainerInterface

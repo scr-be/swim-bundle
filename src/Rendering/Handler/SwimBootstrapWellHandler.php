@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimBootstrapWellHandler.
  */
-class SwimBootstrapWellHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapWellHandler extends AbstractRenderer
 {
     /**
      * @return string

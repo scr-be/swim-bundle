@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimMarkdownHandler.
  */
-class SwimMarkdownHandler extends AbstractSwimRenderingHandler
+class SwimMarkdownHandler extends AbstractRenderer
 {
     /**
      * @var \ParsedownExtra

@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimParagraphStyleHandler.
  */
-class SwimParagraphStyleHandler extends AbstractSwimRenderingHandler
+class SwimParagraphStyleHandler extends AbstractRenderer
 {
     /**
      * @return string

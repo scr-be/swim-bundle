@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * SwimProfilerHandler.
  */
-class SwimProfilerHandler extends AbstractSwimRenderingHandler
+class SwimProfilerHandler extends AbstractRenderer
 {
     /**
      * @return string

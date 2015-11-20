@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimBootstrapTooltipHandler.
  */
-class SwimBootstrapTooltipHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapTooltipHandler extends AbstractRenderer
 {
     /**
      * @return string

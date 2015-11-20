@@ -17,7 +17,7 @@ use Symfony\Component\Routing\RouterInterface;
 /**
  * SwimLinkInternalHandler.
  */
-class SwimLinkInternalHandler extends AbstractSwimRenderingHandler
+class SwimLinkInternalHandler extends AbstractRenderer
 {
     /**
      * @var RouterInterface

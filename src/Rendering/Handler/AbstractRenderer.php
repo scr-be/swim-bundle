@@ -18,7 +18,7 @@ use Scribe\WonkaBundle\Component\DependencyInjection\Compiler\Attendant\Abstract
 /**
  * Class AbstractSwimRenderingHandler.
  */
-abstract class AbstractSwimRenderingHandler extends AbstractCompilerAttendant implements SwimRenderingHandlerInterface
+abstract class AbstractRenderer extends AbstractCompilerAttendant implements RendererInterface
 {
     /**
      * @var array

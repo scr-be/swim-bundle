@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimImageStaticHandler.
  */
-class SwimImageStaticHandler extends AbstractSwimRenderingHandler
+class SwimImageStaticHandler extends AbstractRenderer
 {
     /**
      * @return string

@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * SwimBlockExcludesHandler.
  */
-class SwimBlockExcludesHandler extends AbstractSwimRenderingHandler
+class SwimBlockExcludesHandler extends AbstractRenderer
 {
     /**
      * @var int

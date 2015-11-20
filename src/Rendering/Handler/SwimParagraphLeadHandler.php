@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimParagraphLeadHandler.
  */
-class SwimParagraphLeadHandler extends AbstractSwimRenderingHandler
+class SwimParagraphLeadHandler extends AbstractRenderer
 {
     /**
      * @return string

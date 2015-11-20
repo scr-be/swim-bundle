@@ -14,7 +14,7 @@ namespace Scribe\SwimBundle\Rendering\Handler;
 /**
  * Class SwimBootstrapColumnHandler.
  */
-class SwimBootstrapColumnHandler extends AbstractSwimRenderingHandler
+class SwimBootstrapColumnHandler extends AbstractRenderer
 {
     /**
      * @return string

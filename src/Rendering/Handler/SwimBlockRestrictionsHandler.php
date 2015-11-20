@@ -17,7 +17,7 @@ use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 /**
  * Class SwimBlockRestrictionsHandler.
  */
-class SwimBlockRestrictionsHandler extends AbstractSwimRenderingHandler
+class SwimBlockRestrictionsHandler extends AbstractRenderer
 {
     /**
      * @var AuthorizationCheckerInterface
