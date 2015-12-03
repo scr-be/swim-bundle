@@ -60,7 +60,7 @@ class SwimRenderingManagerTest extends KernelTestCase
     public function testSwimManagerFullPage()
     {
         $manager = static::$staticContainer->get('s.swim');
-        $dirPath = realpath(static::$staticContainer->getParameter('kernel.root_dir').'/../../app/config/shared_public/testers/fixtures/ScribeSwimBundle/Rendering/Manager/');
+        $dirPath = realpath(static::$staticContainer->getParameter('kernel.root_dir').'/../../config/testers/fixtures/ScribeSwimBundle/Rendering/Manager/');
 
         $content_swim = file_get_contents($dirPath.'/scml.swim');
         $content_html = file_get_contents($dirPath.'/scml.html');

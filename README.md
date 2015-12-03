@@ -1,17 +1,18 @@
-# Scribe / Swim Bundle
+# Scribe: Swim Bundle
 
-[![Travis](https://img.shields.io/travis/scr-be/swim-bundle/master.svg?style=flat-square)](https://swim-bundle.docs.scribe.tools/ci)
-[![Scrutinizer](https://img.shields.io/scrutinizer/g/scr-be/swim-bundle/master.svg?style=flat-square)](https://swim-bundle.docs.scribe.tools/quality)
-[![Coveralls](https://img.shields.io/coveralls/scr-be/swim-bundle/master.svg?style=flat-square)](https://swim-bundle.docs.scribe.tools/coverage)
-[![Gemnasium](https://img.shields.io/gemnasium/scr-be/swim-bundle.svg?style=flat-square)](https://swim-bundle.docs.scribe.tools/deps)
+[![Travis](https://scr.be/swim-bundle/travis_shield)](https://scr.be/swim-bundle/travis)
+[![Codacy](https://scr.be/swim-bundle/codacy_shield)](https://scr.be/swim-bundle/codacy)
+[![Coveralls](https://scr.be/swim-bundle/coveralls_shield)](https://scr.be/swim-bundle/coveralls)
+[![Gemnasium](https://scr.be/swim-bundle/gemnasium_shield)](https://scr.be/swim-bundle/gemnasium)
 
-*Scribe / Swim Bundle* is an MIT licensed internal dependency used by
-Scribe Inc for our custom markdown rendering. To be deprecated soon...
+The `scr-be/swim-bundle` project provides a renderer that extends markdown with additional syntax.
 
-## License, Usage, Documentation
+## License, Reference, and Release
 
-[![License](https://img.shields.io/badge/license-MIT-008ac6.svg?style=flat-square)](https://swim-bundle.docs.scribe.tools/license)
-[![API](https://img.shields.io/badge/docs-reference%20api-c75ec1.svg?style=flat-square)](https://swim-bundle.docs.scribe.tools/api)
+[![License](https://scr.be/swim-bundle/license_shield)](https://scr.be/swim-bundle/license)
+[![README](https://scr.be/swim-bundle/readme_shield)](https://scr.be/swim-bundle/readme)
+[![API](https://scr.be/swim-bundle/api_shield)](https://scr.be/swim-bundle/api)
+[![Packagist](https://scr.be/swim-bundle/packagist_shield)](https://scr.be/swim-bundle/packagist)
 
-This project is licensed under the [MIT License](https://swim-bundle.docs.scribe.tools/license).
-User API reference is available via the above buttons.
+This project is licensed under the [MIT License](https://github.com/scr-be/swim-bundle/blob/master/LICENSE.md).
+API Reference docs and our latest release are available via the above badges.
