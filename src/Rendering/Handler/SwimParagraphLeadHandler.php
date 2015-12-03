@@ -34,7 +34,7 @@ class SwimParagraphLeadHandler extends AbstractRenderer
     {
         @preg_match_all('#<([^>])>\*\*\*\*(.*)</(\1)>#i', $string, $matches);
         if (0 < count($matches)) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<'.$matches[1][$i].' class="lead">'.$matches[2][$i].'</'.$matches[1][$i].'>';
                 $string = str_ireplace($matches[0][$i], $replace, $string);
             }
@@ -42,7 +42,7 @@ class SwimParagraphLeadHandler extends AbstractRenderer
 
         @preg_match_all('#<([^>])>\((.*)\)</(\1)>#i', $string, $matches);
         if (0 < count($matches)) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<'.$matches[1][$i].' class="lead">'.$matches[2][$i].'</'.$matches[1][$i].'>';
                 $string = str_ireplace($matches[0][$i], $replace, $string);
             }

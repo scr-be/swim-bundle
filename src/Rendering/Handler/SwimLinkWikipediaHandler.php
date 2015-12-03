@@ -34,7 +34,7 @@ class SwimLinkWikipediaHandler extends AbstractRenderer
     {
         @preg_match_all('#{~wiki:([^ ]*?)( (.*?))?}#i', $string, $nodeWikiMatches);
         if (0 < count($nodeWikiMatches[0])) {
-            for ($i = 0; $i < count($nodeWikiMatches[0]); $i++) {
+            for ($i = 0; $i < count($nodeWikiMatches[0]); ++$i) {
                 $original = $nodeWikiMatches[0][$i];
                 $key = $nodeWikiMatches[1][$i];
                 $title = empty($nodeWikiMatches[3][$i]) ? $key : $nodeWikiMatches[3][$i];

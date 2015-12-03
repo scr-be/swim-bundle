@@ -52,7 +52,7 @@ class SwimBootstrapCollapseHandler extends AbstractRenderer
         $matches = [];
         @preg_match_all('#{~collapse-single:start:(.*?)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $title = $matches[1][$i];
                 $target = StringFilter::alphanumericOnly($matches[1][$i]);
@@ -64,7 +64,7 @@ class SwimBootstrapCollapseHandler extends AbstractRenderer
         $matches = [];
         @preg_match_all('#{~collapse-single:toggle:(.*?)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $title = $matches[1][$i];
                 $target = StringFilter::alphanumericOnly($matches[1][$i]);
@@ -88,7 +88,7 @@ class SwimBootstrapCollapseHandler extends AbstractRenderer
         $matches = [];
         @preg_match_all('#{~collapse:start:open:(.*?)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $title = $matches[1][$i];
                 $target = StringFilter::alphanumericOnly($matches[1][$i]);
@@ -100,7 +100,7 @@ class SwimBootstrapCollapseHandler extends AbstractRenderer
         $matches = [];
         @preg_match_all('#{~collapse:start:(.*?)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $title = $matches[1][$i];
                 $target = StringFilter::alphanumericOnly($matches[1][$i]);
@@ -112,7 +112,7 @@ class SwimBootstrapCollapseHandler extends AbstractRenderer
         $matches = [];
         @preg_match_all('#{~collapse:toggle:(.*?)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $title = $matches[1][$i];
                 $target = StringFilter::alphanumericOnly($matches[1][$i]);

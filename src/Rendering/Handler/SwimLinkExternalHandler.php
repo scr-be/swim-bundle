@@ -34,7 +34,7 @@ class SwimLinkExternalHandler extends AbstractRenderer
     {
         @preg_match_all('#{~a:([^ ]*?)( (.*?))?}#i', $string, $nodeAMatches);
         if (0 < count($nodeAMatches[0])) {
-            for ($i = 0; $i < count($nodeAMatches[0]); $i++) {
+            for ($i = 0; $i < count($nodeAMatches[0]); ++$i) {
                 $original = $nodeAMatches[0][$i];
                 $url = $nodeAMatches[1][$i];
                 if (substr($url, 0, 4) !== 'http') {
@@ -49,7 +49,7 @@ class SwimLinkExternalHandler extends AbstractRenderer
 
         @preg_match_all('#{~a-popup:([^ ]*?)( (.*?))?}#i', $string, $nodeAMatches);
         if (0 < count($nodeAMatches[0])) {
-            for ($i = 0; $i < count($nodeAMatches[0]); $i++) {
+            for ($i = 0; $i < count($nodeAMatches[0]); ++$i) {
                 $original = $nodeAMatches[0][$i];
                 $url = $nodeAMatches[1][$i];
                 if (substr($url, 0, 4) !== 'http') {
@@ -65,7 +65,7 @@ class SwimLinkExternalHandler extends AbstractRenderer
         $nodeAMatches = [];
         @preg_match_all('#{~mail:([^ ]*?)( (.*?))?}#i', $string, $nodeAMatches);
         if (0 < count($nodeAMatches[0])) {
-            for ($i = 0; $i < count($nodeAMatches[0]); $i++) {
+            for ($i = 0; $i < count($nodeAMatches[0]); ++$i) {
                 $original = $nodeAMatches[0][$i];
                 $url = $nodeAMatches[1][$i];
                 $title = empty($nodeAMatches[3][$i]) ? $url : $nodeAMatches[3][$i];

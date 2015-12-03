@@ -39,7 +39,7 @@ class SwimBootstrapColumnHandler extends AbstractRenderer
         @preg_match_all('#{~col:start:([0-9]*?)?}#i', $string, $matches);
 
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 if (empty($matches[1][$i]) && $matches[1][$i] != 0) {
                     $col_span = 12;

@@ -110,7 +110,7 @@ class SwimBootstrapTableFeelHandler extends AbstractRenderer
         $strSearch = [];
         $strReplace = [];
 
-        for ($i = 0; $i < count($matches[0]); $i++) {
+        for ($i = 0; $i < count($matches[0]); ++$i) {
             foreach (range(1, $config_cols) as $j) {
                 if (!in_array($matches[$j][$i], $strSearch)) {
                     $strSearch[] = $matches[$j][$i];
@@ -119,7 +119,7 @@ class SwimBootstrapTableFeelHandler extends AbstractRenderer
             }
         }
 
-        for ($i = 0; $i < count($strSearch); $i++) {
+        for ($i = 0; $i < count($strSearch); ++$i) {
             $content = str_ireplace($strSearch[$i], $strReplace[$i], $content);
         }
     }

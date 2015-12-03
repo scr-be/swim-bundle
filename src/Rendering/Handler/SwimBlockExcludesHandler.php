@@ -42,7 +42,7 @@ class SwimBlockExcludesHandler extends AbstractRenderer
      */
     public function render($string, array $args = [])
     {
-        $this->handlerPassCount++;
+        ++$this->handlerPassCount;
 
         if ($this->handlerPassCount % 2 !== 0) {
             $this->excludedBlocksRemove($string);
@@ -67,7 +67,7 @@ class SwimBlockExcludesHandler extends AbstractRenderer
         $matchesOriginalStr = $matches[0];
         $matchesExcludedStr = $matches[1];
 
-        for ($i = 0; $i < $matchesCount; $i++) {
+        for ($i = 0; $i < $matchesCount; ++$i) {
             $temporaryHash = sha1($matchesExcludedStr.$i);
             $temporaryAnchor = '{~ex:anchor:'.$temporaryHash.'}';
 
@@ -91,7 +91,7 @@ class SwimBlockExcludesHandler extends AbstractRenderer
         $matchesAnchor = $matches[0];
         $matchesHash = $matches[1];
 
-        for ($i = 0; $i < $matchesCount; $i++) {
+        for ($i = 0; $i < $matchesCount; ++$i) {
             $string = str_replace($matchesAnchor[$i], $this->blockExcludes[$matchesHash[$i]], $string);
         }
     }

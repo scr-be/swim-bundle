@@ -97,7 +97,7 @@ class SwimTableOfContentsHandler extends AbstractRenderer
     {
         $array = [];
 
-        for ($i = 0; $i < count($preg_matches[0]); $i++) {
+        for ($i = 0; $i < count($preg_matches[0]); ++$i) {
             $array[] = [
                 'text' => $preg_matches[2][$i],
                 'level' => $preg_matches['h'][$i],

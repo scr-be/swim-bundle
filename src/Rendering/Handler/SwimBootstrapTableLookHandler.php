@@ -89,7 +89,7 @@ class SwimBootstrapTableLookHandler extends AbstractRenderer
         @preg_match_all($pattern, $content, $matches);
 
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = str_ireplace('<td>',  '<th>',  $matches[0][$i]);
                 $replace = str_ireplace('</td>', '</th>', $replace);
                 $content = str_ireplace($matches[0][$i], $replace, $content);
@@ -102,7 +102,7 @@ class SwimBootstrapTableLookHandler extends AbstractRenderer
         @preg_match_all($pattern, $content, $matches);
 
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $content = str_ireplace($matches[0][$i], $replace, $content);
             }
         }

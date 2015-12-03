@@ -34,7 +34,7 @@ class SwimParagraphStyleHandler extends AbstractRenderer
     {
         @preg_match_all('#<\s([^\|]*?)\|(.*)#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $pullquote = $matches[1][$i];
                 $para = $matches[2][$i];
                 $replace = '<p class="has-pullquote" data-pullquote="'.$pullquote.'">'.$para.'</p>';

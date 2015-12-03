@@ -61,7 +61,7 @@ class SwimLinkInternalHandler extends AbstractRenderer
         @preg_match_all($pattern, $work, $matches);
 
         if (count($matches[0]) > 0) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $url = $matches[1][$i];
                 $title = empty($matches[3][$i]) ? $url : $matches[3][$i];
@@ -80,7 +80,7 @@ class SwimLinkInternalHandler extends AbstractRenderer
         @preg_match_all($pattern, $work, $matches);
 
         if (count($matches[0]) > 0) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $path = $matches[1][$i];
                 $title = empty($matches[3][$i]) ? $path : $matches[3][$i];

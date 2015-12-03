@@ -36,7 +36,7 @@ class SwimImageStaticHandler extends AbstractRenderer
         @preg_match_all('#{~image:([^\s]*?)(\s(.*?))?}#i', $string, $matches);
 
         if (0 < count($matches[0])) {
-            for ($i = 0; $i < count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $original = $matches[0][$i];
                 $image_src = $matches[1][$i];
                 $image_title = $matches[2][$i];

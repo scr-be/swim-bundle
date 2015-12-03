@@ -55,11 +55,12 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#<pre><code>#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<pre><code class="nohighlight">';
                 $string = str_ireplace($matches[0][$i], $replace, $string);
             }
         }
+
         return $string;
     }
 
@@ -68,7 +69,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\?:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-warning callout-no-header">'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -77,7 +78,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\!:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-danger callout-no-header">'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -86,7 +87,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\-:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-info callout-no-header">'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -95,7 +96,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\+:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-success callout-no-header">'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -105,7 +106,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\=([^}]+)}(.+){\=~}#iUsm', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-default"><p class="callout-header">'.$matches[1][$i].'</p>'.$this->parsedown->text($matches[2][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -114,7 +115,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\?\=([^}]+)}(.+){\=~}#iUsm', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-warning"><p class="callout-header">'.$matches[1][$i].'</p>'.$this->parsedown->text($matches[2][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -123,7 +124,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~!\=([^}]+)}(.+){\=~}#iUsm', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-danger"><p class="callout-header">'.$matches[1][$i].'</p>'.$this->parsedown->text($matches[2][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -132,7 +133,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\-\=([^}]+)}(.+){\=~}#iUsm', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-info"><p class="callout-header">'.$matches[1][$i].'</p>'.$this->parsedown->text($matches[2][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -141,7 +142,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\+\=([^}]+)}(.+){\=~}#iUsm', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-success"><p class="callout-header">'.$matches[1][$i].'</p>'.$this->parsedown->text($matches[2][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -151,7 +152,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\?\?:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-warning"><p class="callout-header">Note</p>'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -160,7 +161,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~!!:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-danger"><p class="callout-header">Key Point</p>'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -169,7 +170,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\-\-:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-info"><p class="callout-header">Tip</p>'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
@@ -178,7 +179,7 @@ class SwimBootstrapCallOutHandler extends AbstractRenderer
         $matched = [];
         @preg_match_all('#{~\+\+:(.*)}#i', $string, $matches);
         if (0 < count($matches[0])) {
-            for ($i=0; $i<count($matches[0]); $i++) {
+            for ($i = 0; $i < count($matches[0]); ++$i) {
                 $replace = '<div class="callout callout-success"><p class="callout-header">Success</p>'.$this->parsedown->text($matches[1][$i]).'</div>';
                 $string = str_ireplace($matches[0][$i], $this->noHighlightInner($replace), $string);
             }
