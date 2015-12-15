@@ -28,7 +28,7 @@ class Configuration extends AbstractConfiguration
     {
         $this
             ->getBuilderRoot()
-            ->getNodeBuilder()
+            ->getNodeDefinition()
             ->children()
                 ->append($this->getCachingNode())
                 ->append($this->getFeatureNode())
@@ -49,7 +49,7 @@ class Configuration extends AbstractConfiguration
     {
         return $this
             ->getBuilder('caching')
-            ->getNodeBuilder()
+            ->getNodeDefinition()
             ->addDefaultsIfNotSet()
             ->children()
                 ->booleanNode('enabled')
@@ -90,7 +90,7 @@ class Configuration extends AbstractConfiguration
     {
         return $this
             ->getBuilder('feature_matrix')
-            ->getNodeBuilder()
+            ->getNodeDefinition()
             ->addDefaultsIfNotSet()
             ->children()
                 ->booleanNode('block_excludes')
@@ -139,7 +139,7 @@ class Configuration extends AbstractConfiguration
     {
         return $this
             ->getBuilder('blacklist')
-            ->getNodeBuilder()
+            ->getNodeDefinition()
             ->addDefaultsIfNotSet()
             ->children()
                 ->arrayNode('rendering_handlers')
