@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Tests\Rendering\Manager;
+namespace Scribe\Teavee\ScribbleDownBundle\Tests\Rendering\Manager;
 
 use Scribe\WonkaBundle\Utility\TestCase\KernelTestCase;
 
@@ -20,14 +20,14 @@ class SwimRenderingManagerTest extends KernelTestCase
 {
     public function testSwimManagerInstance()
     {
-        $manager = static::$staticContainer->get('s.swim');
+        $manager = static::$staticContainer->get('s.teavee_scribble_down');
 
-        static::assertInstanceOf('Scribe\SwimBundle\Rendering\Manager\SwimRenderingManagerCached', $manager);
+        static::assertInstanceOf('Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\SwimRenderingManagerCached', $manager);
     }
 
     public function testSwimManagerRendering()
     {
-        $manager = static::$staticContainer->get('s.swim');
+        $manager = static::$staticContainer->get('s.teavee_scribble_down');
         $swim = "# Header 1\n\nSome text.\n\n## Header 2\n\nOther text.";
         $expected = '<h1 id="anchor-header1">Header 1</h1>
 <p>Some text.</p>
@@ -41,7 +41,7 @@ class SwimRenderingManagerTest extends KernelTestCase
 
     public function testSwimManagerRenderingAvertCached()
     {
-        $manager = static::$staticContainer->get('s.swim');
+        $manager = static::$staticContainer->get('s.teavee_scribble_down');
 
         $rand1 = mt_rand(10000, 40000);
         $rand2 = mt_rand(50000, 100000);
@@ -59,8 +59,8 @@ class SwimRenderingManagerTest extends KernelTestCase
 
     public function testSwimManagerFullPage()
     {
-        $manager = static::$staticContainer->get('s.swim');
-        $dirPath = realpath(static::$staticContainer->getParameter('kernel.root_dir').'/../../config/testers/fixtures/ScribeSwimBundle/Rendering/Manager/');
+        $manager = static::$staticContainer->get('s.teavee_scribble_down');
+        $dirPath = realpath(static::$staticContainer->getParameter('kernel.root_dir').'/../../.config/testers/fixtures/ScribeSwimBundle/Rendering/Manager/');
 
         $content_swim = file_get_contents($dirPath.'/scml.swim');
         $content_html = file_get_contents($dirPath.'/scml.html');

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Rendering\Manager;
+namespace Scribe\Teavee\ScribbleDownBundle\Rendering\Manager;
 
-use Scribe\CacheBundle\DependencyInjection\Aware\CacheManagerAwareTrait;
+use Scribe\Teavee\ObjectCacheBundle\DependencyInjection\Aware\CacheManagerAwareTrait;
 
 /**
  * Class SwimRenderingManagerCached.

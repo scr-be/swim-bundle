@@ -1,83 +1,144 @@
-# Scribe Swim Bundle
+# [scr-be] teavee-scribble-down-bundle
 
-| CI Test Results | Code Review     | Test Coverage   |
-|:---------------:|:---------------:|:---------------:|
-| [![Travis](https://scr.be/swim-bundle/travis_shield)](https://scr.be/swim-bundle/travis) | [![Codacy](https://scr.be/swim-bundle/codacy_shield)](https://scr.be/swim-bundle/codacy) | [![Coveralls](https://scr.be/swim-bundle/coveralls_shield)](https://scr.be/swim-bundle/coveralls) |
+| Continuous Integration |   Code Quality Review   |    UnitTest Coverage    |
+|:----------------------:|:-----------------------:|:-----------------------:|
+| [![Travis](https://scr.be/teavee-scribble-down-bundle/travis_shield)](https://scr.be/teavee-scribble-down-bundle/travis) | [![Codacy](https://scr.be/teavee-scribble-down-bundle/codacy_shield)](https://scr.be/teavee-scribble-down-bundle/codacy) | [![Coveralls](https://scr.be/teavee-scribble-down-bundle/coveralls_shield)](https://scr.be/teavee-scribble-down-bundle/coveralls) |
 
 ## Overview
 
-The `scr-be/swim-bundle` project provides a Markdown-based rendering engine with additional features.
+[Welcome](https://scr.be/go/readme_welcome)!
+The `scr-be/teavee-scribble-down-bundle` package provides
+a Markdown-based rendering engine with additional features.
 
-- Syntax for Boostrap components
-- Differed link treatments
-- Lots more
+### Grouping
 
-> This project is one of a [collection](https://src.run) of open-source, PHP
-> libraries and Symfony bundles maintained by [Rob Frawley 2nd](https://scr.be/rmf)
-> and [collaborators](https://github.com/scr-be/swim-bundle/graphs/contributors),
-> often under the employ of [Scribe Inc](https://scr.be/).
+This package is part of the [teavee](https://scr.be/teavee-scribble-down-bundle/group)
+group ([explanation](https://scr.be/teavee-scribble-down-bundle/group_explanation)),
+comprised of other releases with a concentration in 
+*media, HTML, content, generator*,
+and related functionality.
 
-## Install
+### JTT
 
-Include this package within your project using [Composer](https://getcomposer.com)
-by executing the following command.
+This package represents a single project within a
+[large collection](https://scr.be/go/explore) of open-source code released
+under the *Scribe* namespace, comprised of framework-agnostic libraries,
+and a number of Symfony bundles. These projects are authored and maintained
+by [Rob Frawley 2nd](https://scr.be/rmf) and 
+[collaborators](https://scr.be/teavee-scribble-down-bundle/github_collaborators),
+often with the support of [Scribe Inc](https://scr.be/go/scribe-home).
+
+## Quick Start
+
+### Installation
+
+Get the code by requiring it explicitly via the [Composer](https://getcomposer.com)
+CLI, or by editing your *composer.json* to reflect the dependency and updating
+your project requirements. For example, to explicitly require this project using
+the CLI, use the following command.
 
 ```bash
-composer require scr-be/swim-bundle
+$ composer require scr-be/teavee-scribble-down-bundle
 ```
 
-Enable the bundle by adding the following line in the *app/AppKernel.php* file
-of your project.
+To enable the bundle, register it with your Symfony application kernel by
+instantiating *ScribeTeaveeScribbleDownBundle* within the bundle array.
 
 ```php
 // app/AppKernel.php
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = array(
+class AppKernel extends Kernel {
+    public function registerBundles() {
+        $bundles = [
             // ...
-            new Scribe\SwimBundle\ScribeSwimBundle(),
-        );
+            new Scribe\Teavee\ScribbleDownBundle\ScribeTeaveeScribbleDownBundle(),
+        ];
         // ...
     }
 }
 ```
 
-## Configuration
+### Configuration
 
-The Symfony *console* command provides a method to dump a bundle's configuration
-reference. To view this information simple call the following command from your
-Symfony project root-directory.
+Available configuration values can be referenced by using the Symfony console command
+`app/console` (assuming the Symfony full-stack framework and bundle registration).
+Additionally, this bundle provides a bare console executable that can be invoked by calling
+the following.
 
 ```bash
-app/console config:dump-reference scribe_swim
+bin/teavee-scribble-down config:dump-reference scribe_teavee_scribble_down
 ```
 
-## API Reference
+## Reference
 
-API reference documentation is available via the badge in the below Resources
-section. This documentation is auto-generated using the excellent
-[Sami CLI application](https://github.com/FriendsOfPHP/Sami), developed by
-[Fabien Potencier](https://github.com/fabpot) and
-[contributors](https://github.com/FriendsOfPHP/Sami/graphs/contributors).
+### API Docs
+
+This package's API-documentation is available at [scr.be/teavee-scribble-down-bundle/api](https://scr.be/teavee-scribble-down-bundle/api),
+(as well as linked below via the *Reference* badge found under the *Additional Links*
+header). All API-reference is build against the *master* Git branch and updated
+automatically on each Git push---api-reference for *specific releases* will
+be provided once this package has matured.
+
+> The entire API-reference website is auto-generated using a quick,
+> reliable, and well-developed CLI tool called [Sami](https://scr.be/go/sami).
+> It is rigerously and regularly tested through its use in large, complex projects,
+> such as the [Symfony Full-Stack Framework](https://scr.be/go/symfony) 
+> <see: [scr.be/go/api-ref-symfony](https://scr.be/go/symfony-api)>, as well
+> as its use in smaller projects such
+> [Twig](https://scr.be/go/sami-twig)
+> <see: [scr.be/go/api-ref-twig](https://scr.be/go/twig-api)>.
+> Reference Sami's [GitHub page](https://scr.be/go/sami) to learn how to use
+> it with your own projects!
+
+### Examples/Tutorials
+
+Currently, there is no *"human-written"* documentation---outside of this README.
+Pending package stability and available resources, a
+[RTD (Read the Docs)](https://scr.be/go/rtd) page will be published with
+additional information and tutorials, including real use-cases within the Symfony
+Framework.
+
+## Contributing
+
+### Discussion
+
+For general inquiries or to discuss a broad topic or idea, you can find
+*robfrawley* on Freenode. There is also a *#scribe* channel, which can
+be joined using the following link
+[irc.choopa.net:6669/scribe](irc://irc.choopa.net:6669/scribe).
+
+### Issues
+
+To report issues or request a new feature use
+[GitHub](https://scr.be/teavee-scribble-down-bundle/github_issues)
+or [GitLab](https://scr.be/teavee-scribble-down-bundle/gitlab_issues)
+to start a discussion. Include as much information as possible to aid in
+a quick resolution. Feel free to "ping" the topic if you don't get a
+response within a few days.
+
+### Code
+
+You created additional functionality during the use of this package? Send
+it back upstream! *Don't hesitate to submit a pull request!* Beyond the
+brief requirements outlined in the
+[contibuting guide](https://scr.be/teavee-scribble-down-bundle/contributing),
+your [imagination](https://scr.be/go/readme_imagination)
+represents the only limitation.
 
 ## License
 
 This project is licensed under the
-[MIT License](https://github.com/scr-be/swim-bundle/blob/master/LICENSE.md), an
-[FSF](https://en.wikipedia.org/wiki/Free_Software_Foundation)/[OSI](https://en.wikipedia.org/wiki/Open_Source_Initiative)
-[approved](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses#Approvals) and
-[GPL compatible](https://en.wikipedia.org/wiki/GNU_General_Public_License#Compatibility_and_multi-licensing)
-permissive free software license. Review the
-[LICENSE.md](https://github.com/scr-be/swim-bundle/blob/master/LICENSE.md)
+[MIT License](https://scr.be/go/mit), an
+[FSF](https://scr.be/go/fsf)-/[OSI](https://scr.be/go/osi)-approved
+and [GPL](https://scr.be/go/gpl)-compatible, permissive free software
+license. Review the
+[LICENSE](https://scr.be/teavee-scribble-down-bundle/license)
 file distributed with this source code for additional information.
 
-# Resource Info/Links
+## Additional Links
 
-| Purpose | Status |
-|:-------:|:------:|
-| Latest Release (Packagist) | [![Packagist](https://scr.be/swim-bundle/packagist_shield)](https://scr.be/swim-bundle/packagist) |
-| Documentation (API)        | [![License](https://scr.be/swim-bundle/api_shield)](https://scr.be/swim-bundle/api) |
-| Dependency Information     | [![Gemnasium](https://scr.be/swim-bundle/gemnasium_shield)](https://scr.be/swim-bundle/gemnasium) |
-| License (MIT)              | [![License](https://scr.be/swim-bundle/license_shield)](https://scr.be/swim-bundle/license) |
+|       Purpose | Status        |
+|--------------:|:--------------|
+| *Stable Release*    | [![Packagist](https://scr.be/teavee-scribble-down-bundle/packagist_shield)](https://scr.be/teavee-scribble-down-bundle/packagist) |
+| *Dev Release*    | [![Packagist](https://scr.be/teavee-scribble-down-bundle/packagist_pre_shield)](https://scr.be/teavee-scribble-down-bundle/packagist) |
+| *License*    | [![License](https://scr.be/teavee-scribble-down-bundle/license_shield)](https://scr.be/teavee-scribble-down-bundle/license) |
+| *Reference*  | [![License](https://scr.be/teavee-scribble-down-bundle/api_shield)](https://scr.be/teavee-scribble-down-bundle/api) |

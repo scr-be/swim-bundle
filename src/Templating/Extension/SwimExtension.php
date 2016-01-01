@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Templating\Extension;
+namespace Scribe\Teavee\ScribbleDownBundle\Templating\Extension;
 
 use Scribe\WonkaBundle\Component\Templating\AbstractTwigExtension;
-use Scribe\SwimBundle\Rendering\Manager\SwimRenderingManagerInterface;
+use Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\SwimRenderingManagerInterface;
 
 /**
  * SwimExtension.

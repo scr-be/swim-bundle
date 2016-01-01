@@ -4,216 +4,219 @@ parameters:
 
     # Factory for Active Swim Rendering Manager (Cahced/Non-Cached)
 
-    s.swim.renderer_factory.class:                      Scribe\SwimBundle\Rendering\Manager\Factory\SwimRendererFactory
+    s.teavee_scribble_down.renderer_factory.class:                      Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\Factory\SwimRendererFactory
 
     # Swim Rendering Managers
 
-    s.swim.renderer_caching_enabled.class:              Scribe\SwimBundle\Rendering\Manager\SwimRenderingManagerCached
-    s.swim.renderer_caching_diabled.class:              Scribe\SwimBundle\Rendering\Manager\SwimRenderingManager
+    s.teavee_scribble_down.renderer_caching_enabled.class:              Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\SwimRenderingManagerCached
+    s.teavee_scribble_down.renderer_caching_diabled.class:              Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\SwimRenderingManager
 
     # Swim Rendering Handler Registrar
 
-    s.swim.renderer_registrar.class:                    Scribe\SwimBundle\DependencyInjection\Compiler\Registrar\RendererCompilerRegistrar
+    s.teavee_scribble_down.renderer_registrar.class:                    Scribe\Teavee\ScribbleDownBundle\DependencyInjection\Compiler\Registrar\RendererCompilerRegistrar
 
     # Swim Rendering Handlers
 
-    s.swim.renderer_type.block_excludes.class:          Scribe\SwimBundle\Rendering\Handler\SwimBlockExcludesHandler
-    s.swim.renderer_type.block_restrictions.class:      Scribe\SwimBundle\Rendering\Handler\SwimBlockRestrictionsHandler
-    s.swim.renderer_type.link_wikipedia.class:          Scribe\SwimBundle\Rendering\Handler\SwimLinkWikipediaHandler
-    s.swim.renderer_type.link_external.class:           Scribe\SwimBundle\Rendering\Handler\SwimLinkExternalHandler
-    s.swim.renderer_type.link_internal.class:           Scribe\SwimBundle\Rendering\Handler\SwimLinkInternalHandler
-    s.swim.renderer_type.bootstrap_column.class:        Scribe\SwimBundle\Rendering\Handler\SwimBootstrapColumnHandler
-    s.swim.renderer_type.bootstrap_tooltip.class:       Scribe\SwimBundle\Rendering\Handler\SwimBootstrapTooltipHandler
-    s.swim.renderer_type.image_static.class:            Scribe\SwimBundle\Rendering\Handler\SwimImageStaticHandler
-    s.swim.renderer_type.callout.class:                 Scribe\SwimBundle\Rendering\Handler\SwimBootstrapCallOutHandler
-    s.swim.renderer_type.character_style.class:         Scribe\SwimBundle\Rendering\Handler\SwimCharacterStyleHandler
-    s.swim.renderer_type.paragraph_style.class:         Scribe\SwimBundle\Rendering\Handler\SwimParagraphStyleHandler
-    s.swim.renderer_type.markdown.class:                Scribe\SwimBundle\Rendering\Handler\SwimMarkdownHandler
-    s.swim.renderer_type.bootstrap_collapse.class:      Scribe\SwimBundle\Rendering\Handler\SwimBootstrapCollapseHandler
-    s.swim.renderer_type.bootstrap_well.class:          Scribe\SwimBundle\Rendering\Handler\SwimBootstrapWellHandler
-    s.swim.renderer_type.markdown_cleanup.class:        Scribe\SwimBundle\Rendering\Handler\SwimMarkdownCleanupHandler
-    s.swim.renderer_type.bootstrap_table_look.class:    Scribe\SwimBundle\Rendering\Handler\SwimBootstrapTableLookHandler
-    s.swim.renderer_type.bootstrap_table_feel.class:    Scribe\SwimBundle\Rendering\Handler\SwimBootstrapTableFeelHandler
-    s.swim.renderer_type.paragraph_lead.class:          Scribe\SwimBundle\Rendering\Handler\SwimParagraphLeadHandler
-    s.swim.renderer_type.table_of_contents.class:       Scribe\SwimBundle\Rendering\Handler\SwimTableOfContentsHandler
-    s.swim.renderer_type.profiler.class:                Scribe\SwimBundle\Rendering\Handler\SwimProfilerHandler
+    s.teavee_scribble_down.renderer_type.block_excludes.class:          Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBlockExcludesHandler
+    s.teavee_scribble_down.renderer_type.block_restrictions.class:      Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBlockRestrictionsHandler
+    s.teavee_scribble_down.renderer_type.link_wikipedia.class:          Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimLinkWikipediaHandler
+    s.teavee_scribble_down.renderer_type.link_external.class:           Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimLinkExternalHandler
+    s.teavee_scribble_down.renderer_type.link_internal.class:           Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimLinkInternalHandler
+    s.teavee_scribble_down.renderer_type.bootstrap_column.class:        Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapColumnHandler
+    s.teavee_scribble_down.renderer_type.bootstrap_tooltip.class:       Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapTooltipHandler
+    s.teavee_scribble_down.renderer_type.image_static.class:            Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimImageStaticHandler
+    s.teavee_scribble_down.renderer_type.callout.class:                 Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapCallOutHandler
+    s.teavee_scribble_down.renderer_type.character_style.class:         Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimCharacterStyleHandler
+    s.teavee_scribble_down.renderer_type.paragraph_style.class:         Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimParagraphStyleHandler
+    s.teavee_scribble_down.renderer_type.markdown.class:                Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimMarkdownHandler
+    s.teavee_scribble_down.renderer_type.bootstrap_collapse.class:      Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapCollapseHandler
+    s.teavee_scribble_down.renderer_type.bootstrap_well.class:          Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapWellHandler
+    s.teavee_scribble_down.renderer_type.markdown_cleanup.class:        Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimMarkdownCleanupHandler
+    s.teavee_scribble_down.renderer_type.bootstrap_table_look.class:    Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapTableLookHandler
+    s.teavee_scribble_down.renderer_type.bootstrap_table_feel.class:    Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimBootstrapTableFeelHandler
+    s.teavee_scribble_down.renderer_type.paragraph_lead.class:          Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimParagraphLeadHandler
+    s.teavee_scribble_down.renderer_type.table_of_contents.class:       Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimTableOfContentsHandler
+    s.teavee_scribble_down.renderer_type.profiler.class:                Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\SwimProfilerHandler
 
     # Twig Extensions
 
-    s.swim.renderer.twig_extension.class:               Scribe\SwimBundle\Templating\Extension\SwimExtension
+    s.teavee_scribble_down.renderer.twig_extension.class:               Scribe\Teavee\ScribbleDownBundle\Templating\Extension\SwimExtension
 
 services:
 
     # Swim Manager
 
     s.swim :
-        alias : s.swim.renderer
+        alias : s.teavee_scribble_down
+
+    s.teavee_scribble_down :
+        alias : s.teavee_scribble_down.renderer
 
     # Factory for Active Swim Rendering Manager (Cahced/Non-Cached)
 
-    s.swim.renderer :
-        class   : %s.swim.renderer_caching_enabled.class%
+    s.teavee_scribble_down.renderer :
+        class   : %s.teavee_scribble_down.renderer_caching_enabled.class%
         factory :
-            - %s.swim.renderer_factory.class%
+            - %s.teavee_scribble_down.renderer_factory.class%
             - getRenderer
         arguments :
             - '@s.wonka.utility.service_finder'
-            - %s.swim.caching.enabled%
+            - %s.teavee_scribble_down.caching.enabled%
 
     # Swim Rendering Managers
 
-    s.swim.renderer_caching_enabled:
-        class     : %s.swim.renderer_caching_enabled.class%
+    s.teavee_scribble_down.renderer_caching_enabled:
+        class     : %s.teavee_scribble_down.renderer_caching_enabled.class%
         arguments :
-            - '@s.swim.renderer_registrar'
-            - %s.swim.caching.strategy%
-            - %s.swim.caching.time_to_live%
+            - '@s.teavee_scribble_down.renderer_registrar'
+            - %s.teavee_scribble_down.caching.strategy%
+            - %s.teavee_scribble_down.caching.time_to_live%
         calls :
             - [setCacheManager, ['@s.cache']]
 
-    s.swim.renderer_caching_disabled:
-        class     : %s.swim.renderer_caching_enabled.class%
+    s.teavee_scribble_down.renderer_caching_disabled:
+        class     : %s.teavee_scribble_down.renderer_caching_enabled.class%
         arguments :
-            - '@s.swim.renderer_registrar'
+            - '@s.teavee_scribble_down.renderer_registrar'
 
     # Swim Rendering Handler Registrar
 
-    s.swim.renderer_registrar:
-        class     : %s.swim.renderer_registrar.class%
+    s.teavee_scribble_down.renderer_registrar:
+        class     : %s.teavee_scribble_down.renderer_registrar.class%
         arguments :
             - '@?debug.stopwatch'
-            - %s.swim.blacklist.rendering_handlers%
+            - %s.teavee_scribble_down.blacklist.rendering_handlers%
 
     # Swim Rendering Handlers
 
-    s.swim.renderer_type.block_excludes:
-        class  : %s.swim.renderer_type.block_excludes.class%
+    s.teavee_scribble_down.renderer_type.block_excludes:
+        class  : %s.teavee_scribble_down.renderer_type.block_excludes.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 1, priority_end : 1 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 1, priority_end : 1 }
 
-    s.swim.renderer_type.block_restrictions:
-        class     : %s.swim.renderer_type.block_restrictions.class%
+    s.teavee_scribble_down.renderer_type.block_restrictions:
+        class     : %s.teavee_scribble_down.renderer_type.block_restrictions.class%
         public    : false
         arguments :
             - '@security.authorization_checker'
             - '@security.token_storage'
             - '@?s.security.org.repo'
         tags:
-            - { name : s.swim.renderer_attendant, priority : 2 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 2 }
 
-    s.swim.renderer_type.link_wikipedia:
-        class  : %s.swim.renderer_type.link_wikipedia.class%
+    s.teavee_scribble_down.renderer_type.link_wikipedia:
+        class  : %s.teavee_scribble_down.renderer_type.link_wikipedia.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 3 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 3 }
 
-    s.swim.renderer_type.link_external:
-        class  : %s.swim.renderer_type.link_external.class%
+    s.teavee_scribble_down.renderer_type.link_external:
+        class  : %s.teavee_scribble_down.renderer_type.link_external.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 4 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 4 }
 
-    s.swim.renderer_type.link_internal:
-        class     : %s.swim.renderer_type.link_internal.class%
+    s.teavee_scribble_down.renderer_type.link_internal:
+        class     : %s.teavee_scribble_down.renderer_type.link_internal.class%
         public    : false
         arguments :
             - '@router'
         tags:
-            - { name : s.swim.renderer_attendant, priority : 5 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 5 }
 
-    s.swim.renderer_type.bootstrap_column:
-        class  : %s.swim.renderer_type.bootstrap_column.class%
+    s.teavee_scribble_down.renderer_type.bootstrap_column:
+        class  : %s.teavee_scribble_down.renderer_type.bootstrap_column.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 6 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 6 }
 
-    s.swim.renderer_type.bootstrap_tooltip:
-        class  : %s.swim.renderer_type.bootstrap_tooltip.class%
+    s.teavee_scribble_down.renderer_type.bootstrap_tooltip:
+        class  : %s.teavee_scribble_down.renderer_type.bootstrap_tooltip.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 7 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 7 }
 
-    s.swim.renderer_type.image_static:
-        class  : %s.swim.renderer_type.image_static.class%
+    s.teavee_scribble_down.renderer_type.image_static:
+        class  : %s.teavee_scribble_down.renderer_type.image_static.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 8 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 8 }
 
-    s.swim.renderer_type.callout:
-        class  : %s.swim.renderer_type.callout.class%
+    s.teavee_scribble_down.renderer_type.callout:
+        class  : %s.teavee_scribble_down.renderer_type.callout.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 9 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 9 }
 
-    s.swim.renderer_type.character_style:
-        class  : %s.swim.renderer_type.character_style.class%
+    s.teavee_scribble_down.renderer_type.character_style:
+        class  : %s.teavee_scribble_down.renderer_type.character_style.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 10 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 10 }
 
-    s.swim.renderer_type.paragraph_style:
-        class  : %s.swim.renderer_type.paragraph_style.class%
+    s.teavee_scribble_down.renderer_type.paragraph_style:
+        class  : %s.teavee_scribble_down.renderer_type.paragraph_style.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 11 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 11 }
 
-    s.swim.renderer_type.markdown:
-        class  : %s.swim.renderer_type.markdown.class%
+    s.teavee_scribble_down.renderer_type.markdown:
+        class  : %s.teavee_scribble_down.renderer_type.markdown.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 12 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 12 }
 
-    s.swim.renderer_type.bootstrap_collapse:
-        class  : %s.swim.renderer_type.bootstrap_collapse.class%
+    s.teavee_scribble_down.renderer_type.bootstrap_collapse:
+        class  : %s.teavee_scribble_down.renderer_type.bootstrap_collapse.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 13 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 13 }
 
-    s.swim.renderer_type.bootstrap_well:
-        class  : %s.swim.renderer_type.bootstrap_well.class%
+    s.teavee_scribble_down.renderer_type.bootstrap_well:
+        class  : %s.teavee_scribble_down.renderer_type.bootstrap_well.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 14 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 14 }
 
-    s.swim.renderer_type.markdown_cleanup:
-        class  : %s.swim.renderer_type.markdown_cleanup.class%
+    s.teavee_scribble_down.renderer_type.markdown_cleanup:
+        class  : %s.teavee_scribble_down.renderer_type.markdown_cleanup.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 15 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 15 }
 
-    s.swim.renderer_type.bootstrap_table_look:
-        class  : %s.swim.renderer_type.bootstrap_table_look.class%
+    s.teavee_scribble_down.renderer_type.bootstrap_table_look:
+        class  : %s.teavee_scribble_down.renderer_type.bootstrap_table_look.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 16 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 16 }
 
-    s.swim.renderer_type.bootstrap_table_feel:
-        class  : %s.swim.renderer_type.bootstrap_table_feel.class%
+    s.teavee_scribble_down.renderer_type.bootstrap_table_feel:
+        class  : %s.teavee_scribble_down.renderer_type.bootstrap_table_feel.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 17 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 17 }
 
-    s.swim.renderer_type.paragraph_lead:
-        class  : %s.swim.renderer_type.paragraph_lead.class%
+    s.teavee_scribble_down.renderer_type.paragraph_lead:
+        class  : %s.teavee_scribble_down.renderer_type.paragraph_lead.class%
         public : false
         tags   :
-            - { name : s.swim.renderer_attendant, priority : 18 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 18 }
 
-    s.swim.renderer_type.table_of_contents:
-        class     : %s.swim.renderer_type.table_of_contents.class%
+    s.teavee_scribble_down.renderer_type.table_of_contents:
+        class     : %s.teavee_scribble_down.renderer_type.table_of_contents.class%
         public    : false
         arguments :
             - '@service_container'
         tags :
-            - { name : s.swim.renderer_attendant, priority : 19 }
+            - { name : s.teavee_scribble_down.renderer_attendant, priority : 19 }
 
     # Twig Extensions
 
-    s.swim.renderer.twig_extension:
-        class     : %s.swim.renderer.twig_extension.class%
+    s.teavee_scribble_down.renderer.twig_extension:
+        class     : %s.teavee_scribble_down.renderer.twig_extension.class%
         arguments :
-            - '@s.swim'
+            - '@s.teavee_scribble_down'
         tags :
             - { name : twig.extension }
 

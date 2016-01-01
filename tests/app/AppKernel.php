@@ -30,8 +30,8 @@ class AppKernel extends Kernel
             new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
             new \Scribe\WonkaBundle\ScribeWonkaBundle(),
-            new \Scribe\CacheBundle\ScribeCacheBundle(),
-            new \Scribe\SwimBundle\ScribeSwimBundle(),
+            new \Scribe\Teavee\ObjectCacheBundle\ScribeTeaveeObjectCacheBundle(),
+            new \Scribe\Teavee\ScribbleDownBundle\ScribeTeaveeScribbleDownBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {

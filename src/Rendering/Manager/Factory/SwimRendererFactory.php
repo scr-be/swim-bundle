@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Rendering\Manager\Factory;
+namespace Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\Factory;
 
 use Scribe\WonkaBundle\Component\DependencyInjection\Container\ServiceFinder;
-use Scribe\SwimBundle\Rendering\Manager\SwimRenderingManagerInterface;
+use Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\SwimRenderingManagerInterface;
 
 /**
  * Class SwimRendererFactory.
@@ -24,14 +24,14 @@ class SwimRendererFactory
      *
      * @var string
      */
-    const SWIM_RENDERER_CACHING_DISABLED = 's.swim.renderer_caching_disabled';
+    const SWIM_RENDERER_CACHING_DISABLED = 's.teavee_scribble_down.renderer_caching_disabled';
 
     /**
      * Service name of Swim renderer with caching.
      *
      * @var string
      */
-    const SWIM_RENDERER_CACHING_ENABLED = 's.swim.renderer_caching_enabled';
+    const SWIM_RENDERER_CACHING_ENABLED = 's.teavee_scribble_down.renderer_caching_enabled';
 
     /**
      * @param ServiceFinder $serviceFinder

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Rendering\Manager;
+namespace Scribe\Teavee\ScribbleDownBundle\Rendering\Manager;
 
-use Scribe\SwimBundle\DependencyInjection\Compiler\Registrar\RendererCompilerRegistrar;
+use Scribe\Teavee\ScribbleDownBundle\DependencyInjection\Compiler\Registrar\RendererCompilerRegistrar;
 
 /**
  * Class SwimRenderingManager.

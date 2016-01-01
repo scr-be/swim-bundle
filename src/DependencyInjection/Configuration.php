@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\DependencyInjection;
+namespace Scribe\Teavee\ScribbleDownBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Scribe\WonkaBundle\Component\DependencyInjection\AbstractConfiguration;

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Rendering\Handler;
+namespace Scribe\Teavee\ScribbleDownBundle\Rendering\Handler;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -200,7 +200,7 @@ class SwimTableOfContentsHandler extends AbstractRenderer
         $twig = $this->container->get('twig');
 
         return $twig->render(
-            'ScribeSwimBundle:Toc:contents.html.twig',
+            'ScribeTeaveeScribbleDownBundle:Toc:contents.html.twig',
             [
                 'toc_heads' => $toc_heads,
             ]

@@ -10,4 +10,7 @@ php_conf : timezone
 php_exts : igbinary,memcached
 app_prep : dep-composer
 app_post : ~
-app_path : bin/scribe-swim
+app_path : bin/teavee-scribble-down
+pkg_name : teavee-scribble-down-bundle
+pkg_desc : "a Markdown-based rendering engine with additional features."
+pkg_bndl : true

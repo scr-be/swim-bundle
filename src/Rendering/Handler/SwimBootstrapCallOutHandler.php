@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Rendering\Handler;
+namespace Scribe\Teavee\ScribbleDownBundle\Rendering\Handler;
 
 /**
  * Class SwimParserQueries.

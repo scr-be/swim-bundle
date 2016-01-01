@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Rendering\Handler;
+namespace Scribe\Teavee\ScribbleDownBundle\Rendering\Handler;
 
-use Scribe\SwimBundle\Rendering\Manager\SwimRenderingManagerInterface;
+use Scribe\Teavee\ScribbleDownBundle\Rendering\Manager\SwimRenderingManagerInterface;
 use Scribe\WonkaBundle\Component\DependencyInjection\Compiler\Attendant\CompilerAttendantInterface;
 
 /**

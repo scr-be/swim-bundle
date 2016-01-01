@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\DependencyInjection\Compiler\Registrar;
+namespace Scribe\Teavee\ScribbleDownBundle\DependencyInjection\Compiler\Registrar;
 
 use Scribe\WonkaBundle\Component\DependencyInjection\Compiler\Attendant\CompilerAttendantInterface;
 use Scribe\WonkaBundle\Component\DependencyInjection\Compiler\Registrar\AbstractCompilerRegistrar;
@@ -29,7 +29,7 @@ class RendererCompilerRegistrar extends AbstractCompilerRegistrar
     public function __construct(...$parameters)
     {
         parent::__construct(
-            ['interfaceCollection' => ['Scribe\SwimBundle\Rendering\Handler\RendererInterface']]
+            ['interfaceCollection' => ['Scribe\Teavee\ScribbleDownBundle\Rendering\Handler\RendererInterface']]
         );
     }
 

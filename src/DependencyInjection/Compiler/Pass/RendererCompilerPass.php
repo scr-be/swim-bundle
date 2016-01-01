@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\DependencyInjection\Compiler\Pass;
+namespace Scribe\Teavee\ScribbleDownBundle\DependencyInjection\Compiler\Pass;
 
 use Scribe\WonkaBundle\Component\DependencyInjection\Compiler\Pass\AbstractCompilerPass;
 
@@ -23,7 +23,7 @@ class RendererCompilerPass extends AbstractCompilerPass
      */
     public function getRegistrarSrvName()
     {
-        return 's.swim.renderer_registrar';
+        return 's.teavee_scribble_down.renderer_registrar';
     }
 
     /**
@@ -31,7 +31,7 @@ class RendererCompilerPass extends AbstractCompilerPass
      */
     public function getAttendantTagName()
     {
-        return 's.swim.renderer_attendant';
+        return 's.teavee_scribble_down.renderer_attendant';
     }
 }
 

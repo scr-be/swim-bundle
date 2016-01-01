@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\DependencyInjection;
+namespace Scribe\Teavee\ScribbleDownBundle\DependencyInjection;
 
 use Scribe\WonkaBundle\Component\DependencyInjection\AbstractExtension;
 
 /**
- * Class ScribeSwimExtension.
+ * Class ScribeTeaveeScribbleDownExtension.
  */
-class ScribeSwimExtension extends AbstractExtension
+class ScribeTeaveeScribbleDownExtension extends AbstractExtension
 {
 }
 

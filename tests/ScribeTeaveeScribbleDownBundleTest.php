@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle\Tests;
+namespace Scribe\Teavee\ScribbleDownBundle\Tests;
 
 use PHPUnit_Framework_TestCase;
 use ReflectionClass;
-use Scribe\SwimBundle\ScribeSwimBundle;
+use Scribe\Teavee\ScribbleDownBundle\ScribeTeaveeScribbleDownBundle;
 use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class ScribeSwimBundleTest.
+ * Class ScribeTeaveeScribbleDownBundleTest.
  */
-class ScribeSwimBundleTest extends PHPUnit_Framework_TestCase
+class ScribeTeaveeScribbleDownBundleTest extends PHPUnit_Framework_TestCase
 {
-    const FULLY_QUALIFIED_CLASS_NAME = 'Scribe\SwimBundle\ScribeSwimBundle';
+    const FULLY_QUALIFIED_CLASS_NAME = 'Scribe\Teavee\ScribbleDownBundle\ScribeTeaveeScribbleDownBundle';
 
     private static $container;
 
@@ -35,7 +35,7 @@ class ScribeSwimBundleTest extends PHPUnit_Framework_TestCase
 
     public function getNewBundle()
     {
-        return new ScribeSwimBundle();
+        return new ScribeTeaveeScribbleDownBundle();
     }
 
     public function getReflection()
@@ -50,14 +50,14 @@ class ScribeSwimBundleTest extends PHPUnit_Framework_TestCase
 
     public function testCanAccessContainerServices()
     {
-        static::assertTrue(static::$container->has('s.swim'));
+        static::assertTrue(static::$container->has('s.teavee_scribble_down'));
     }
 
     public function testCanApplyCompilerPass()
     {
-        static::assertTrue(static::$container->has('s.swim.renderer_registrar'));
+        static::assertTrue(static::$container->has('s.teavee_scribble_down.renderer_registrar'));
 
-        $r = static::$container->get('s.swim.renderer_registrar');
+        $r = static::$container->get('s.teavee_scribble_down.renderer_registrar');
 
         static::assertNotEquals([], $r->getAttendantCollection());
         static::assertCount(20, $r);

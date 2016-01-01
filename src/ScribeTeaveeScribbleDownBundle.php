@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Scribe\SwimBundle;
+namespace Scribe\Teavee\ScribbleDownBundle;
 
-use Scribe\SwimBundle\DependencyInjection\Compiler\Pass\RendererCompilerPass;
+use Scribe\Teavee\ScribbleDownBundle\DependencyInjection\Compiler\Pass\RendererCompilerPass;
 use Scribe\WonkaBundle\Component\Bundle\AbstractCompilerAwareBundle;
 
 /**
- * Class ScribeSwimBundle.
+ * Class ScribeTeaveeScribbleDownBundle.
  */
-class ScribeSwimBundle extends AbstractCompilerAwareBundle
+class ScribeTeaveeScribbleDownBundle extends AbstractCompilerAwareBundle
 {
     /**
      * {@inheritdoc}
