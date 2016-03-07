@@ -168,7 +168,7 @@ class SwimRenderingManager implements SwimRenderingManagerInterface
             return $this->attributes[(string) $key];
         }
 
-        return;
+        return null;
     }
 
     /**

@@ -92,7 +92,7 @@ class SwimBlockRestrictionsHandler extends AbstractRenderer
     {
         if ((false === preg_match_all($regularExpression, $string, $matches)) ||
             (false === is_array($matches) || 3 !== count($matches) || 0 === count($matches[0]))) {
-            return;
+            return null;
         }
 
         $matchesOriginalStr = $matches[0];

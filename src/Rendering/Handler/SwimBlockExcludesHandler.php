@@ -60,7 +60,7 @@ class SwimBlockExcludesHandler extends AbstractRenderer
     {
         if ((false === preg_match_all('#{~verbatim}((.*?\n?)*?){~verbatim:end}#i', $string, $matches)) &&
             (false === is_array($matches) || 2 !== count($matches) || 0 === count($matches[0]))) {
-            return;
+            return null;
         }
 
         $matchesCount = count($matches[0]);
@@ -84,7 +84,7 @@ class SwimBlockExcludesHandler extends AbstractRenderer
     {
         if ((false === preg_match_all('#{~ex:anchor:(.*?)}#i', $string, $matches)) &&
             (false === is_array($matches) || 2 !== count($matches) || 0 === count($matches[0]))) {
-            return;
+            return null;
         }
 
         $matchesCount = count($matches[0]);

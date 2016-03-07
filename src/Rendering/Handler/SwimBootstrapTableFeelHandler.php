@@ -95,7 +95,7 @@ class SwimBootstrapTableFeelHandler extends AbstractRenderer
         $config_sizes = explode(',', $config_size);
 
         if ($config_cols != count($config_sizes)) {
-            return;
+            return null;
         }
 
         $rowPattern = '';
